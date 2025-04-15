@@ -7,7 +7,8 @@ export const fetchSettings = () => {
     try {
       dispatch({ type: settingsActionTypes.FETCH_SETTINGS });
       dispatch({ type: postsActionTypes.RESET_POSTS });
-      const resp = await fetch('http://localhost:4000/settings');
+      const baseUrl = import.meta.env.VITE_API_URL;
+      const resp = await fetch(`${baseUrl}/settings`);
 
       if (!resp.ok) {
         throw new Error(`Ошибка при загрузке настроек: ${resp.status}`);
