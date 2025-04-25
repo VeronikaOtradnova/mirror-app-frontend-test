@@ -1,7 +1,5 @@
 # Mirror App Frontend Test
 
-Тестовое задание на Frontend разработчика
-
 #### Демо-версия приложения: [перейти](https://mirror-app-frontend-test-demo.vercel.app/)
 
 <details>
